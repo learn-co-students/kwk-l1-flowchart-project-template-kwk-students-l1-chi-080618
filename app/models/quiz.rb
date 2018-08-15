@@ -1,5 +1,5 @@
-class Quiz
-def quiz 
-  puts ""
+# class Quiz
+# def quiz 
+#   puts ""
 
-end
+# end
