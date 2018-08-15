@@ -243,58 +243,57 @@ Bundler.require
       restaurantName="Felice's Kitchen"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://s3-media3.fl.yelpcdn.com/bphoto/QuZXz20xxJsr5jStLQ_9dA/ls.jpg"
+      url="http://www.feliceskitchen.com/"
       
     elsif @user_ans == 232
       restaurantName="Maggiano's Little Italy"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="http://oldtownscottsdale.com/wp-content/uploads/2015/05/Maggiano.jpg"
+      url="https://www.maggianos.com/"
       
     elsif @user_ans == 332
       restaurantName="RPM Italian"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://resizer.otstatic.com/v2/photos/wide-huge/24610276.jpg"
+      url="http://rpmrestaurants.com/"
       
     elsif @user_ans == 142
       restaurantName="Chipotle"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://amp.businessinsider.com/images/596e15d9c50c29ac008b4fd1-750-563.jpg"
+      url="https://www.chipotle.com/"
       
     elsif @user_ans == 242
       restaurantName="El Tapatio"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://media-cdn.tripadvisor.com/media/photo-s/02/d3/2b/4b/cafe-el-tapatio.jpg"
+      url="http://www.cafeeltapatio.com/"
       
     elsif @user_ans == 342
       restaurantName="Topolobampo"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="http://www.rickbayless.com/wp-content/uploads/2017/07/TopoloSliderb1000x554.jpg"
+      url="http://www.rickbayless.com/restaurants/topolobampo/"
       
-    elsif @user_ans == 152
+     elsif @user_ans == 152
       restaurantName="Roti Modern Mediterranean"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://roti.com/wp-content/themes/roti/images/placeholder/about/rollover-food2.jpg"
       url="https://roti.com/"
-      elsif @user_ans == 152
       
        elsif @user_ans == 252
     restaurantName="Ema"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://media1.fdncms.com/chicago/imager/u/original/23192411/fnd_review-ema-teaser-1.jpg"
+      url="http://emachicago.com/"
       
        elsif @user_ans == 352
       restaurantName="Fig and Olive"
@@ -332,15 +331,15 @@ Bundler.require
       restaurantName="Froyo Chicago"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
-      url="https://brightwok.com/"
+      img="https://images.coplusk.net/blog/feature/values/8149/image/large_AGarbotPhotography-LakeviewChamber-FroyoRibbon-08-PRINT__1_.jpg"
+      url="http://froyochicago.com/"
       
     elsif @user_ans == 272
       restaurantName="Pinkberry"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
-      url="https://westtownbakery.com/"
+      img="http://justachitowngirl.files.wordpress.com/2011/06/pinkberry.jpg"
+      url="http://www.pinkberry.com/"
       
     elsif @user_ans == 372
       restaurantName="Westtown Bakery"
@@ -349,6 +348,160 @@ Bundler.require
       img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
       url="https://westtownbakery.com/"
 
+
+#SHELLFISH ALLERGY
+
+elsif @user_ans == 113
+      restaurantName="PF Chang's"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://www.downtowntempe.com/_files/images/pf.png"
+      url="https://www.pfchangs.com/"
+      
+      elsif @user_ans == 213
+      restaurantName="Serai"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://s3-media1.fl.yelpcdn.com/bphoto/lDjEKwKHYi9SpYnzJdWnhw/o.jpg"
+      url="http://www.seraichicago.com/"
+      
+      elsif @user_ans == 313
+      restaurantName="Duck Duck Goat"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="http://breakfastgator.com/wp-content/uploads/2016/07/DDG-Interior-7-W.jpg"
+      url="http://duckduckgoatchicago.com/"
+      
+       elsif @user_ans == 123
+      restaurantName="Portillo's"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://tribwxin.files.wordpress.com/2018/04/photo-credit-portillos-via-facebook.jpg?quality=85&strip=all&w=400&h=225&crop=1"
+      url="https://www.portillos.com/index.html"
+      
+      elsif @user_ans == 223
+      restaurantName="Square Roots Kitchen"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://static1.squarespace.com/static/5606ec51e4b017614f804ffe/t/56ae9580d210b838e554826b/1454282122264/SRK+Steak+Cobb+Wrap.jpg?format=1500w"
+      url="https://squarerootskitchen.com/"
+      
+    elsif @user_ans == 323
+     restaurantName="Catch 35"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://www.chicagotraveler.com/sites/www.chicagotraveler.com/files/billboard/catch-35-restaurant_C.jpg"
+      url="http://www.catch35.com/"
+      
+      elsif @user_ans == 133
+      restaurantName="Blaze Pizza"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://bloximages.newyork1.vip.townnews.com/feastmagazine.com/content/tncms/assets/v3/editorial/5/9f/59f307aa-3c35-11e8-a0d1-1b86ab5fc600/5acbce3f77157.image.jpg"
+      url="https://blazepizza.com/"
+      
+      
+      elsif @user_ans == 233
+      restaurantName="Maggiano's Little Italy"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
+      url="https://westtownbakery.com/"
+      
+       elsif @user_ans == 333
+      restaurantName="RPM Italian"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://resizer.otstatic.com/v2/photos/wide-huge/24610276.jpg"
+      url="http://rpmrestaurants.com/"
+      
+      elsif @user_ans == 143
+      restaurantName="Chipotle"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://moadrupalweb.blob.core.windows.net/moadrupalweb/original/5586_Chipotle_HeroImage.jpg"
+      url="https://www.chipotle.com/"
+      
+      elsif @user_ans == 243
+      restaurantName="Sabrosa Tex-Mex"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://resizer.otstatic.com/v2/photos/large/25189729.jpg"
+      url="http://www.sabrosatexmex.com/"
+      
+      elsif @user_ans == 343
+      restaurantName="Barrio"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="http://www.jetsetreport.com/admin2/photos/rotatenightlife875/Barrio_Chicago_001.jpg"
+      url="http://www.barriochicago.com/"
+      
+      elsif @user_ans == 153
+      restaurantName="Roti Modern Mediterranean"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://roti.com/wp-content/themes/roti/images/placeholder/about/rollover-food2.jpg"
+      url="https://roti.com/"
+      
+      
+    elsif @user_ans == 253
+      restaurantName="Athena Greek Restaurant"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="http://www.athenarestaurantchicago.com/images/content/gallery/insidepano.png"
+      url="http://www.athenarestaurantchicago.com/"
+      
+      
+    elsif @user_ans == 353
+      restaurantName="Fig and Olive"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://assets3.thrillist.com/v1/image/1526993/size/tmg-article_default_mobile.jpg"
+      url="https://www.figandolive.com/"
+      
+    elsif @user_ans == 163
+      restaurantName="Aloha Poke"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://cdn.vox-cdn.com/thumbor/LE4j3Jijweg7R1Nl_bRp87IJMzs=/0x0:1024x683/1200x800/filters:focal(357x271:519x433)/cdn.vox-cdn.com/uploads/chorus_image/image/59884101/AlohaPoke_29_1024x683.0.jpg"
+      url="https://www.alohapokeco.com/"
+      
+      elsif @user_ans == 263
+      restaurantName="Be Leaf"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://www.beleafsalad.com/wp-content/uploads/2015/04/Img_Menu_MexicanSalad_550.jpg"
+      url="https://www.beleafsalad.com/"
+      
+      elsif @user_ans == 363
+      restaurantName="Everest"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://resizer.otstatic.com/v2/photos/large/24611439.jpg"
+      url="http://www.everestrestaurant.com/"
+      
+      elsif @user_ans == 173
+      restaurantName="Firecakes"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://media-cdn.tripadvisor.com/media/photo-s/0e/b2/eb/c4/firecakes-donuts.jpg"
+      url="http://firecakesdonuts.com/"
+      
+       elsif @user_ans == 273
+      restaurantName="FRIO Gelato"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://3.bp.blogspot.com/-nUK899YKaVo/WMnqWULQCnI/AAAAAAALgsA/lchTAd05llA1dyyBi6QHadKO3CgHNGNEgCLcB/s1600/Frio%2BGelato%2BSouthport%2BCorridor%2BChicago.jpg"
+      url="https://www.friogelato.com/"
+      
+      elsif @user_ans == 373
+      restaurantName="Sugar Factory"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://cdn.vox-cdn.com/thumbor/4h1BzezmiL4O2zZMM1kiLiAKmbI=/0x0:1207x901/1200x800/filters:focal(508x355:700x547)/cdn.vox-cdn.com/uploads/chorus_image/image/59544055/The_King_Kong_Sundae_Sugar_Factory_Atlanta_1.0.jpg"
+      url="https://sugarfactory.com/location/chicago-river-north/"
+      
+      
     else
       welcome ="In order to get a solution you must complete all the answers to the test"
       img="https://blog.sqlauthority.com/i/a/errorstop.png"
