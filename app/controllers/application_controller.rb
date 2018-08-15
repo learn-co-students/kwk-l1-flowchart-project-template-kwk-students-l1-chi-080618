@@ -35,16 +35,16 @@ Bundler.require
     v1=params[:q1]
     v2=params[:q2]
     v3=params[:q3]
-    v4=params[:q4]
-    p v4
-    @user_ans = total(v1, v2, v3, v4)
+    p v3
+    @user_ans = total(v1, v2, v3)
     p @user_ans
-    if @user_ans == 13110
-      dogName="Cockapoo"
-      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{dogName}</a> </b> is the dog we've decided will works best for you!"
-      descrip="They adapt well to living to apartment living, are very good choices for new owners, can tolerate being alone, and can tolerate the cold and heat very well. They are very friendly towards everybody. They do not shed, do not drool, are easy to groom, have potential to gain weight, and not big dogs. They can be trained, are very smart, and can bark and howl. They have lots of energy, need lots of exercise, and are extremely playful." 
-      img="http://www.ozcockapoos.net/ginger3.JPg"
-      url="https://en.wikipedia.org/wiki/Cockapoo"
+    if @user_ans == 111
+      restaurantName="Brightwok Kitchen"
+      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img="https://media.timeout.com/images/104064944/630/472/image.jpg"
+      url="https://brightwok.com/"
+
     
     elsif @user_ans == 23110
       dogName="Cavalier King Charles"
