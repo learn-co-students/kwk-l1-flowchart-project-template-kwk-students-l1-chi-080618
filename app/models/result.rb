@@ -1,3 +1,3 @@
-class Result
+# class Result
 
-end
+# end

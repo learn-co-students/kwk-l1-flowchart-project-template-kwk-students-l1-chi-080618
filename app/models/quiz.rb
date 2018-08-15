@@ -1,3 +1,3 @@
-class Quiz
+# class Quiz
 
-end
+# end
