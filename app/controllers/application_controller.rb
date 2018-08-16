@@ -1,5 +1,6 @@
-require './config/environment'
-require './app/models/sample_model'
+# require './config/environment'
+# require './app/models/quiz.rb'
+# require_relative 'models/result.rb'
 
 class ApplicationController < Sinatra::Base
 
@@ -11,33 +12,36 @@ class ApplicationController < Sinatra::Base
   require 'bundler'
 Bundler.require
 # require_relative 'models/question.rb'
-# class MyApp < Sinatra::Base
 
   get '/' do
     erb :index
   end
+  # get '/quiz' do
+  #   erb :quiz
+  # end
+  
   get '/quiz' do
-    erb :'quiz'
+    erb :quiz
   end
   
-  # get '/question' do
-  #   erb :question
-  # end
+  get '/about' do
+    erb :about
+  end
   
-  # get '/about' do
-  #   erb :about
-  # end
+  get '/answer' do
+    erb :answer
+  end
   
   post '/answer' do
     username=params[:name]
-    @user_name=username.capitalize
+    @user_name = username.capitalize
     puts @user_name
-    v1=params[:q1]
-    v2=params[:q2]
-    v3=params[:q3]
-    p v3
+    v1=params[:allergy]
+    v2=params[:cuisine]
+    v3=params[:price]
+    # p v3
     @user_ans = total(v1, v2, v3)
-    p @user_ans
+    # p @user_ans
     if @user_ans == 111 
       #NUT ALLERGY
       restaurantName="Brightwok Kitchen"
@@ -218,21 +222,21 @@ Bundler.require
       img="https://sundachicago.com/wp-content/uploads/2014/02/Sunda-Sushi-Special-3-of-4.jpg"
       url="https://sundanewasian.com/chicago/"
       
-       elsif @user_ans == 122
-    restaurantName="Meatheads"
+    elsif @user_ans == 122
+      restaurantName="Meatheads"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://www.meatheadsburgers.com/wp-content/uploads/2016/05/meatheads-hawaiian.jpg"
       url="https://www.meatheadsburgers.com/"
       
-       elsif @user_ans == 222
-    restaurantName="Au Cheval"
+    elsif @user_ans == 222
+      restaurantName="Au Cheval"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://media.timeout.com/images/104064944/630/472/image.jpg"
       url="https://brightwok.com/"
       
-      elsif @user_ans == 322
+    elsif @user_ans == 322
       restaurantName="LYFE Kitchen"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -288,14 +292,14 @@ Bundler.require
       img="https://roti.com/wp-content/themes/roti/images/placeholder/about/rollover-food2.jpg"
       url="https://roti.com/"
       
-       elsif @user_ans == 252
-    restaurantName="Ema"
+    elsif @user_ans == 252
+      restaurantName="Ema"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://media1.fdncms.com/chicago/imager/u/original/23192411/fnd_review-ema-teaser-1.jpg"
       url="http://emachicago.com/"
       
-       elsif @user_ans == 352
+    elsif @user_ans == 352
       restaurantName="Fig and Olive"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -351,35 +355,35 @@ Bundler.require
 
 #SHELLFISH ALLERGY
 
-elsif @user_ans == 113
+    elsif @user_ans == 113
       restaurantName="PF Chang's"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://www.downtowntempe.com/_files/images/pf.png"
       url="https://www.pfchangs.com/"
       
-      elsif @user_ans == 213
+    elsif @user_ans == 213
       restaurantName="Serai"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://s3-media1.fl.yelpcdn.com/bphoto/lDjEKwKHYi9SpYnzJdWnhw/o.jpg"
       url="http://www.seraichicago.com/"
       
-      elsif @user_ans == 313
+    elsif @user_ans == 313
       restaurantName="Duck Duck Goat"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="http://breakfastgator.com/wp-content/uploads/2016/07/DDG-Interior-7-W.jpg"
       url="http://duckduckgoatchicago.com/"
       
-       elsif @user_ans == 123
+    elsif @user_ans == 123
       restaurantName="Portillo's"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://tribwxin.files.wordpress.com/2018/04/photo-credit-portillos-via-facebook.jpg?quality=85&strip=all&w=400&h=225&crop=1"
       url="https://www.portillos.com/index.html"
       
-      elsif @user_ans == 223
+    elsif @user_ans == 223
       restaurantName="Square Roots Kitchen"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -393,7 +397,7 @@ elsif @user_ans == 113
       img="https://www.chicagotraveler.com/sites/www.chicagotraveler.com/files/billboard/catch-35-restaurant_C.jpg"
       url="http://www.catch35.com/"
       
-      elsif @user_ans == 133
+    elsif @user_ans == 133
       restaurantName="Blaze Pizza"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -401,28 +405,28 @@ elsif @user_ans == 113
       url="https://blazepizza.com/"
       
       
-      elsif @user_ans == 233
+    elsif @user_ans == 233
       restaurantName="Maggiano's Little Italy"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
       url="https://westtownbakery.com/"
       
-       elsif @user_ans == 333
+    elsif @user_ans == 333
       restaurantName="RPM Italian"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://resizer.otstatic.com/v2/photos/wide-huge/24610276.jpg"
       url="http://rpmrestaurants.com/"
       
-      elsif @user_ans == 143
+    elsif @user_ans == 143
       restaurantName="Chipotle"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
       img="https://moadrupalweb.blob.core.windows.net/moadrupalweb/original/5586_Chipotle_HeroImage.jpg"
       url="https://www.chipotle.com/"
       
-      elsif @user_ans == 243
+    elsif @user_ans == 243
       restaurantName="Sabrosa Tex-Mex"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -436,7 +440,7 @@ elsif @user_ans == 113
       img="http://www.jetsetreport.com/admin2/photos/rotatenightlife875/Barrio_Chicago_001.jpg"
       url="http://www.barriochicago.com/"
       
-      elsif @user_ans == 153
+    elsif @user_ans == 153
       restaurantName="Roti Modern Mediterranean"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -466,7 +470,7 @@ elsif @user_ans == 113
       img="https://cdn.vox-cdn.com/thumbor/LE4j3Jijweg7R1Nl_bRp87IJMzs=/0x0:1024x683/1200x800/filters:focal(357x271:519x433)/cdn.vox-cdn.com/uploads/chorus_image/image/59884101/AlohaPoke_29_1024x683.0.jpg"
       url="https://www.alohapokeco.com/"
       
-      elsif @user_ans == 263
+    elsif @user_ans == 263
       restaurantName="Be Leaf"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
       descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
@@ -671,17 +675,25 @@ elsif @user_ans == 113
        
     elsif @user_ans == 374
       restaurantName="Westtown Bakery"
-      welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
-      img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
-      url="https://westtownbakery.com/"
+      welcome = "Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
+      descrip = "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      img = "https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
+      url = "https://westtownbakery.com/"
+    
+    # elsif @user_ans == 374 && @user_ans == 374
+    #   restaurantName="Westtown Bakery"
+    #   restaurantName2="Westtown Bakery"
+    #   welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName} and #{restaurantName2}</a> </b> are the restaurant that will best accommodate your allergies!"
+    #   descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+    #   img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
+    #   url="https://westtownbakery.com/"  
       
       
     else
       welcome ="In order to get a solution you must complete all the answers to the test"
       img="https://blog.sqlauthority.com/i/a/errorstop.png"
     end
-    @results=[welcome, dogName, descrip, img, url]
+    @results=[welcome, restaurantName, descrip, img, url]
     erb :answer
   end
 

@@ -1,9 +1,6 @@
-def calculate_result(point_total)
-    if point_total >= 30
-        return "bffs"
-    elsif point_total > 15 && point_total < 30
-        return "ok"
-    else
-        return "nope"
-    end
+def total(value1, value2, value3)
+  value1=value1.to_i
+  value2=value2.to_i
+  value3=value3.to_i
+  total=value1+value2+value3
 end
