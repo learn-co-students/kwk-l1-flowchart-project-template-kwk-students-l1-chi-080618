@@ -549,14 +549,14 @@ Bundler.require
     elsif @user_ans == 324 
       restaurantName="Hub 51"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} offers diverse eats from sushi to tacos to burgers in a trendy, hopping space with a downstairs club that includes gluten and nut free dishes."
       img="https://partyslate.imgix.net/photos/152661/photo-32f75318-e41d-450e-b4bc-9e81d93cc49f.jpg?ixlib=rails-2.1.2"
       url="http://hub51chicago.com/"
       
      elsif @user_ans == 134
       restaurantName="Blaze Pizza"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} serves fast-fired custom built artisanal pizzas, and can accommodate nut and gluten allergies."
       img="https://bloximages.newyork1.vip.townnews.com/feastmagazine.com/content/tncms/assets/v3/editorial/5/9f/59f307aa-3c35-11e8-a0d1-1b86ab5fc600/5acbce3f77157.image.jpg"
       url="https://blazepizza.com/"
       
@@ -564,63 +564,63 @@ Bundler.require
     elsif @user_ans == 234
       restaurantName="Maggiano's Little Italy"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is an American casual dining restaurant chain specializing in Italian-American cuisine that provides accommodations for all food allergies and intolerances."
       img="https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
       url="https://westtownbakery.com/"
       
     elsif @user_ans == 334
       restaurantName="RPM Italian"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} serves pasta, steaks & seafood in a sleek, group-friendly eatery. They provide menu items for gluten, nut, and dairy allergies."
       img="https://resizer.otstatic.com/v2/photos/wide-huge/24610276.jpg"
       url="http://rpmrestaurants.com/"
       
     elsif @user_ans == 144
       restaurantName="Chipotle"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is an American chain of fast casual restaurants in the United States, United Kingdom, Canada, Germany, and France, specializing in tacos and Mission-style burritos. They can accommodate nut-free, vegan, and gluten-free diets."
       img="https://moadrupalweb.blob.core.windows.net/moadrupalweb/original/5586_Chipotle_HeroImage.jpg"
       url="https://www.chipotle.com/"
       
     elsif @user_ans == 244
       restaurantName="Sabrosa Tex-Mex"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} offers fresh, high-quality tex-mex food at affordable pricing."
       img="https://resizer.otstatic.com/v2/photos/large/25189729.jpg"
       url="http://www.sabrosatexmex.com/"
       
     elsif @user_ans == 344
       restaurantName="Frontera Grill"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is Chef Rick Bayless' always-busy flagship restaurant where creative Mexican fare is served in a festive space."
       img="https://cdn.vox-cdn.com/thumbor/O8WkbeU3l8iURC2IG2HtCm98N5E=/55x0:944x667/1200x675/filters:focal(55x0:944x667)/cdn.vox-cdn.com/uploads/chorus_image/image/38791528/2014_fronteraext.0.jpg"
       url="http://www.rickbayless.com/restaurants/frontera-grill/"
       
     elsif @user_ans == 154
       restaurantName="I Dream of Falafel"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "At #{restaurantName}, one of the best Mediterranean & middle eastern restaurants in downtown Chicago with gluten-free and vegan options, enjoy the fresh & flavorful taste of Mediterranean cuisines."
       img="http://www.idreamoffalafel.com/wp-content/uploads/i-dream-of-falafel-our-story-sharing-is-caring.jpg"
       url="http://www.idreamoffalafel.com/"
       
     elsif @user_ans == 254
       restaurantName="Andies Restaurant"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} offers Mediterranean & Middle Eastern fare, much of it vegetarian, served in a family-friendly venue."
       img="https://checkplease.wttw.com/sites/default/files/417511_iPad-Large_20121019132403.jpg.resize.768x432.jpg"
       url="https://www.andieschicago.com/"
       
      elsif @user_ans == 354
       restaurantName="Eden"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is a restaurant where creative New American fare with Mediterranean influences pairs with craft cocktails in a chic space."
       img="https://cdn.vox-cdn.com/thumbor/dJE5YqeCJHqH8gl_ug8bPJDDxrw=/0x0:3500x2333/1200x800/filters:focal(1470x887:2030x1447)/cdn.vox-cdn.com/uploads/chorus_image/image/52330769/blb13495_31585242986_o.0.jpeg"
       url="https://edeninchicago.com/"
       
     elsif @user_ans == 164
       restaurantName="Aloha Poke"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is Chicago’s poke pioneer. The intention is simple: pack fresh, fast and tasty bowls of quality raw ingredients. We have a mission to rethink fast food and we are here to provide a healthy meal that fuels the day. They have options for vegan, gluten-free, and nut-free meals."
       img="https://cdn.vox-cdn.com/thumbor/LE4j3Jijweg7R1Nl_bRp87IJMzs=/0x0:1024x683/1200x800/filters:focal(357x271:519x433)/cdn.vox-cdn.com/uploads/chorus_image/image/59884101/AlohaPoke_29_1024x683.0.jpg"
       url="https://www.alohapokeco.com/"
       
@@ -628,7 +628,7 @@ Bundler.require
     elsif @user_ans == 264
      restaurantName="Chicago Diner"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} offers an entirely meat-free menu. There are plenty of items for vegans and gluten free diets, including their famous vegan milkshakes."
       img="https://c.o0bg.com/rf/image_960w/Boston/2011-2020/2014/02/13/BostonGlobe.com/Lifestyle/Images/ILveggie-dagwood.jpg"
       url="http://www.veggiediner.com/"
      
@@ -636,7 +636,7 @@ Bundler.require
     elsif @user_ans == 364
       restaurantName="Everest"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is an elegant 40th floor eatery in the Chicago Stock Exchange with French prix fixe menus & city views with a seperate vegan menu."
       img="https://resizer.otstatic.com/v2/photos/large/24611439.jpg"
       url="http://www.everestrestaurant.com/"
       
@@ -644,21 +644,21 @@ Bundler.require
     elsif @user_ans == 174
       restaurantName="Froyo Chicago"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} is a delicious soft serve yogurt establishment located in the heart of Chicago that accommodates dairy-free, vegan and gluten-free diets."
       img="https://images.coplusk.net/blog/feature/values/8149/image/large_AGarbotPhotography-LakeviewChamber-FroyoRibbon-08-PRINT__1_.jpg"
       url="http://froyochicago.com/"
     
     elsif @user_ans == 274
       restaurantName="Swirlz Cupcakes"
       welcome ="Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip= "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip= "#{restaurantName} has cakes & cupcakes with Italian buttercream, plus gluten-free & vegan options, in a spare setting."
       img="https://wwcdn.weddingwire.com/vendor/70001_75000/71929/thumbnails/800x800_1231886838203-grownupcakescropped.jpg"
       url="http://www.swirlzcupcakesshop.com/"
        
     elsif @user_ans == 374
       restaurantName="Westtown Bakery"
       welcome = "Thank you for taking our quiz, #{@user_name}. <br> <b> #{restaurantName}</a> </b> is the restaurant that will best accommodate your allergy!"
-      descrip = "#{restaurantName} has a gluten-free, dairy-free, and peanut-free menu, and all of their homemade sauces are vegan. It is a counter style, veggie-focused, Asian inspired restaurant that believes in daily food prep."
+      descrip = "#{restaurantName}'s food is meant to be enjoyed by anyone, regardless of lifestyle, allergies, moral beliefs, or health condition. Cakes and pastries at West Town Bakery can meet almost any need, including vegan, nut-free, soy-free, gluten-free, and dairy-free diet."
       img = "https://lindsayamalone.files.wordpress.com/2015/02/ice-skate-2.jpg"
       url = "https://westtownbakery.com/"
     
