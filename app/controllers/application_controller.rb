@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   
   post '/region' do
     
-    region = params[:region]
+  region = params[:region]
  
     if region == "South"
       return erb :south
@@ -80,6 +80,99 @@ class ApplicationController < Sinatra::Base
       return erb :milwaukee_dessert
     end 
   end 
+  
+  
+ 
+post '/phoenix_quiz' do
+    activity = params[:activity]
+    if activity == "Workout"
+      return erb :phoenix_workout
+      
+    elsif activity == "Eat_Breakfast"
+      return erb :phoenix_breakfast
+      
+    elsif activity == "Go_Shopping"
+      return erb :phoenix_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :phoenix_lunch
+    
+    elsif activity == "Visit_a_Local_Landmark"
+      return erb :phoenix_Landmark
+    
+    elsif activity == "Find_Entertainment"
+      return erb :phoenix_entertainment
+      
+    elsif activity == "Eat_Dinner_and_Dessert"
+      return erb :phoenix_dessert
+    else 
+      return "wrong page"
+    end 
+  end 
+
+
+
+
+post '/losangeles_quiz' do
+    activity = params[:activity]
+    if activity == "Workout"
+      return erb :losangeles_workout
+      
+    elsif activity == "Eat_Breakfast"
+      return erb :losangeles_breakfast
+      
+    elsif activity == "Go_Shopping"
+      return erb :losangeles_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :losangeles_lunch
+    
+    elsif activity == "Visit_a_Local_Landmark"
+      return erb :losangeles_Landmark
+    
+    elsif activity == "Find_Entertainment"
+      return erb :losangeles_entertainment
+      
+    elsif activity == "Eat_Dinner_and_Dessert"
+      return erb :losangeles_dessert
+    else
+	  return "wrong page"
+    end 
+  end 
+
+
+
+
+
+
+post '/seattle_quiz' do
+    activity = params[:activity]
+    if activity == "Workout"
+      return erb :seattle_workout
+      
+    elsif activity == "Eat_Breakfast"
+      return erb :seattle_breakfast
+      
+    elsif activity == "Go_Shopping"
+      return erb :seattle_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :seattle_lunch
+    
+    elsif activity == "Visit_a_Local_Landmark"
+      return erb :seattle_Landmark
+    
+    elsif activity == "Find_Entertainment"
+      return erb :seattle_entertainment
+      
+    elsif activity == "Eat_Dinner_and_Dessert"
+      return erb :seattle_dessert
+    Else
+	Return “Wrong Page” 
+    end 
+  end 
+
+
       
       
 
