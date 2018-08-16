@@ -8,29 +8,22 @@ class ApplicationController < Sinatra::Base
   end
     
   get '/' do
+    erb :index
+  end
+
+  get '/region' do
     erb :region
+  end
+  get '/about' do
+    erb :about
   end
   
   post '/region' do
     
-  region = params[:region]
+  region = params[:home]
  
-    if region == "South"
-      return erb :south
-    
-    elsif region == "Southeast"
-      return erb :southeast
-
-    elsif region == "Midwest"
-      return erb :midwest
-    
-    elsif region == "Eastcoast"
-      return erb :eastcoast
-      
-    elsif region == "Westcoast"
-      return erb :westcoast
-    else
-      return "wrong page"
+    if region == "Home"
+      return erb :home
     end 
   end
   
