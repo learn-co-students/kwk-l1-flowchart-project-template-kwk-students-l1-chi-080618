@@ -27,6 +27,10 @@ class ApplicationController < Sinatra::Base
     end
     
   end
+  
+  get '/about_us' do
+    erb :about_us
+  end
 
 end
 
