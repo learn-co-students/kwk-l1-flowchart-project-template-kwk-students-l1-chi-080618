@@ -7,9 +7,33 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
     
-  get '/'do
-    erb :index
+  get '/' do
+    erb :region
   end
+  
+  post '/region' do
+    
+    region = params[:region]
+ 
+    if region == "South"
+      return erb :south
+    
+    elsif region == "Southeast"
+      return erb :southeast
+
+    elsif region == "Midwest"
+      return erb :midwest
+    
+    elsif region == "Eastcoast"
+      return erb :eastcoast
+      
+    elsif region == "Westcoast"
+      return erb :westcoast
+    else
+      return "wrong page"
+    end 
+  end
+  
   
   post '/result' do
     
