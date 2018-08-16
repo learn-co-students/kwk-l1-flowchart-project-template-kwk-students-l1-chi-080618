@@ -1,7 +1,7 @@
 .selfDefTips{
   color:#737373; 
   font-family:Lucida Grande; 
-  text-align: center; 
+  text-align: left; 
   font-size:20px;
 }
 
@@ -14,7 +14,7 @@
 body{
     height: 400px;
     /*background-color:;*/
-    text-align:center;
+    text-align: left;
     font-family:Palatino;
     font-size:17px;
     
