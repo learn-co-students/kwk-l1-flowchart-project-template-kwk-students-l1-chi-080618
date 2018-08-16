@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   get '/homepage' do
-    erb :homepage
+    erb :index
   end
   get '/quiz' do
     erb :quiz
