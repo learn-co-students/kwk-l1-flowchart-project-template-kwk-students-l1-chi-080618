@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
   end
   
   
-  post '/result' do
+  post '/midwest_result' do
     
     city = params[:city]
  
@@ -50,6 +50,24 @@ class ApplicationController < Sinatra::Base
     
     elsif city == "St._Louis"
       return erb :stlouis
+    else
+      return "wrong_page"
+    end 
+  end
+  
+  post '/westcoast_result' do
+    
+    city = params[:city]
+ 
+    if city == "Phoenix"
+      return erb :phoenix
+    
+    elsif city == "Los Angeles"
+      return erb :losangeles
+
+    elsif city == "Seattle"
+      return erb :seattle
+
     else
       return "wrong_page"
     end 
@@ -98,13 +116,13 @@ post '/phoenix_quiz' do
       return erb :phoenix_lunch
     
     elsif activity == "Visit_a_Local_Landmark"
-      return erb :phoenix_Landmark
+      return erb :phoenix_landmark
     
     elsif activity == "Find_Entertainment"
       return erb :phoenix_entertainment
       
     elsif activity == "Eat_Dinner_and_Dessert"
-      return erb :phoenix_dessert
+      return erb :phoenix_dinner
     else 
       return "wrong page"
     end 
