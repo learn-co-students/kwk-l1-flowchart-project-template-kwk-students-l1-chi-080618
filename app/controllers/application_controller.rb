@@ -94,5 +94,12 @@ class ApplicationController < Sinatra::Base
     
     
   end
-
+  
+  get '/homepage' do
+    erb :homepage
+  end
+  
+  get '/selfDeftips' do
+    erb :selfDefTips
+  end
 end
