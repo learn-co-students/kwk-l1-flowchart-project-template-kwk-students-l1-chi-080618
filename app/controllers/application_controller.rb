@@ -32,8 +32,157 @@ post '/region' do
       return "wrong page"
     end
   end
-
-
+  
+  post '/south_quiz' do
+    city = params[:city]
+    
+    if city == "Austin"
+      return erb :Austin
+    elsif city == "New_Orleans"
+      return erb :Neworleans
+    elsif city == "Atlanta"
+      return erb :Atlanta
+    elsif city == "Nashville"
+      return erb :Nashville
+    else
+      return "wrong page"
+    end
+  end
+  
+  post '/Austin_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :Austin_workout
+    
+    elsif activity == "breakfast"
+      return erb :Austin_breakfast
+    
+    elsif activity == "shopping"
+      return erb :Austin_shopping
+    
+    elsif activity == "lunch"
+      return erb :Austin_lunch
+    
+    elsif activity == "attraction"
+      return erb :Austin_landmark
+    
+    elsif activity == "entertainment"
+      return erb :Austin_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :Austin_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+   
+  post '/Atlanta_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :Atlanta_workout
+    
+    elsif activity == "breakfast"
+      return erb :Atlanta_breakfast
+    
+    elsif activity == "shopping"
+      return erb :Atlanta_shopping
+    
+    elsif activity == "lunch"
+      return erb :Atlanta_lunch
+    
+    elsif activity == "attraction"
+      return erb :Atlanta_landmark
+    
+    elsif activity == "entertainment"
+      return erb :Atlnta_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :Atlanta_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+  
+  
+  
+  post '/New_Orleans_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :New_Orleans_workout
+    
+    elsif activity == "breakfast"
+      return erb :New_Orleans_breakfast
+    
+    elsif activity == "shopping"
+      return erb :New_Orleans_shopping
+    
+    elsif activity == "lunch"
+      return erb :New_Orleans_lunch
+    
+    elsif activity == "attraction"
+      return erb :New_Orleans_landmark
+    
+    elsif activity == "entertainment"
+      return erb :New_Orleans_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :New_Orleans_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -82,7 +231,9 @@ post '/region' do
       return "wrong page"
     end 
   end
-  end
+
+
+end
 
 
 
