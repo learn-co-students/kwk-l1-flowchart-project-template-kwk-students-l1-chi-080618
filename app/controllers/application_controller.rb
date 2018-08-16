@@ -62,7 +62,7 @@ class ApplicationController < Sinatra::Base
     if city == "Phoenix"
       return erb :phoenix
     
-    elsif city == "Los Angeles"
+    elsif city == "Los_Angeles"
       return erb :losangeles
 
     elsif city == "Seattle"
@@ -137,23 +137,23 @@ post '/losangeles_quiz' do
     if activity == "Workout"
       return erb :losangeles_workout
       
-    elsif activity == "Eat_Breakfast"
+    elsif activity == "Breakfast"
       return erb :losangeles_breakfast
       
-    elsif activity == "Go_Shopping"
+    elsif activity == "Shopping"
       return erb :losangeles_shopping
       
     elsif activity == "Eat_Lunch"
       return erb :losangeles_lunch
     
-    elsif activity == "Visit_a_Local_Landmark"
-      return erb :losangeles_Landmark
+    elsif activity == "Landmark"
+      return erb :losangeles_landmark
     
-    elsif activity == "Find_Entertainment"
+    elsif activity == "Entertainment"
       return erb :losangeles_entertainment
       
-    elsif activity == "Eat_Dinner_and_Dessert"
-      return erb :losangeles_dessert
+    elsif activity == "Dinner"
+      return erb :losangeles_dinner
     else
 	  return "wrong page"
     end 
@@ -169,23 +169,23 @@ post '/seattle_quiz' do
     if activity == "Workout"
       return erb :seattle_workout
       
-    elsif activity == "Eat_Breakfast"
+    elsif activity == "Breakfast"
       return erb :seattle_breakfast
       
-    elsif activity == "Go_Shopping"
+    elsif activity == "Shopping"
       return erb :seattle_shopping
       
     elsif activity == "Eat_Lunch"
       return erb :seattle_lunch
     
-    elsif activity == "Visit_a_Local_Landmark"
+    elsif activity == "Landmark"
       return erb :seattle_Landmark
     
-    elsif activity == "Find_Entertainment"
+    elsif activity == "Entertainment"
       return erb :seattle_entertainment
       
-    elsif activity == "Eat_Dinner_and_Dessert"
-      return erb :seattle_dessert
+    elsif activity == "Dinner"
+      return erb :seattle_dinner
     else
 	    return "wrong page"
     end 
