@@ -14,7 +14,7 @@
 body{
     height: 400px;
     /*background-color:;*/
-    text-align:center;
+    text-align: center;
     font-family:Lucida Grande;
 }
 
@@ -61,4 +61,8 @@ body{
   font-family:Lucida Grande;
   text-align: left;
   
+}
+.pt{
+  font-family:Lucida Grande;
+  text-align: center;
 }
