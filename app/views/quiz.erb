@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Which Planet Are You?</title>
+     <link href="https://fonts.googleapis.com/css?family=Lobster%7COswald"         rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="/styles.css">
+ <style>
+  .head {
+    font-family: 'Lobster', cursive;
+   }
+  .subhead {
+    font-family: 'Roboto Condensed', sans-serif;
+   }
+ </style>
+ </head>
+ <body>
+   <h1 class="head" >Astro App</h1>
+ <div class="topnav">
+ <a class="active subhead" href="/">Home</a>
+ <a href="/solarsystem" class="subhead">Our Solar System</a>
+ <a href="/universenews" class="subhead">Universal Update</a>
+ <a href="/quiz" class="subhead">Quiz</a>
+ <a href="/astrology" class="subhead">Astrology</a>
+ <a href="/other" class="subhead">Other</a>
+ </div>
+ <h3 class="subhead2"> Which Planet Are You? Take the Quiz! </h3>
+<form method="POST" action="/results">
+ <p class="para">What is your favorite color?</p>
+   <input type="radio" name="color" value="1"><p>red</p><br>
+   <input type="radio" name="color" value="2"><p>green</p><br>
+   <input type="radio" name="color" value="3"><p>yellow</p><br>
+   <input type="radio" name="color" value="4"><p>silver</p><br>
+   <input type="radio" name="color" value="5"><p>gold</p><br>
+   <input type="radio" name="color" value="6"><p>brown</p><br>
+   <input type="radio" name="color" value="7"><p>pink</p><br>
+   <input type="radio" name="color" value="8"><p>black</p><br>
+   <input type="radio" name="color" value="9"><p>purple</p><br>
+   <input type="radio" name="color" value="10"><p>grey</p><br>
+   <input type="radio" name="color" value="11"><p>blue</p><br>
+   <input type="radio" name="color" value="12"><p>light green</p><br>
+
+ <p class="para">What is your zodiac sign?</p>
+   <input type="radio" name="sign" value="1"><p>Aries</p><br>
+   <input type="radio" name="sign" value="2"><p>Taurus</p><br>
+   <input type="radio" name="sign" value="3"><p>Gemini</p><br>
+   <input type="radio" name="sign" value="4"><p>Cancer</p><br>
+   <input type="radio" name="sign" value="5"><p>Leo</p><br>
+   <input type="radio" name="sign" value="6"><p>Virgo</p><br>
+   <input type="radio" name="sign" value="7"><p>Libra</p><br>
+   <input type="radio" name="sign" value="8"><p>Scorpio</p><br>
+   <input type="radio" name="sign" value="9"><p>Sagittarius</p><br>
+   <input type="radio" name="sign" value="10"><p>Capricorn</p><br>
+   <input type="radio" name="sign" value="11"><p>Aquarius</p><br>
+   <input type="radio" name="sign" value="12"><p>Pisces</p><br>
+
+ <p class="para">What is your favorite animal?</p>
+   <input type="radio" name="animal" value="1"><p>sheep</p><br>
+   <input type="radio" name="animal" value="2"><p>cow</p><br>
+   <input type="radio" name="animal" value="3"><p>hummingbird</p><br>
+   <input type="radio" name="animal" value="4"><p>blue whale</p><br>
+   <input type="radio" name="animal" value="5"><p>lion</p><br>
+   <input type="radio" name="animal" value="6"><p>cat</p><br>
+   <input type="radio" name="animal" value="7"><p>dog</p><br>
+   <input type="radio" name="animal" value="8"><p>snake</p><br>
+   <input type="radio" name="animal" value="9"><p>horse</p><br>
+   <input type="radio" name="animal" value="10"><p>seal</p><br>
+   <input type="radio" name="animal" value="11"><p>bear</p><br>
+   <input type="radio" name="animal" value="12"><p>dolphin</p><br>
+
+ <p class="para">What is your favorite music genre?</p>
+   <input type="radio" name="music" value="1"><p>rock</p><br>
+   <input type="radio" name="music" value="2"><p>reggae</p><br>
+   <input type="radio" name="music" value="3"><p>motown</p><br>
+   <input type="radio" name="music" value="4"><p>blues</p><br>
+   <input type="radio" name="music" value="5"><p>heavy metal</p><br>
+   <input type="radio" name="music" value="6"><p>classical</p><br>
+   <input type="radio" name="music" value="7"><p>r&b</p><br>
+   <input type="radio" name="music" value="8"><p>jazz</p><br>
+   <input type="radio" name="music" value="9"><p>foriegn music</p><br>
+   <input type="radio" name="music" value="10"><p>country</p><br>
+   <input type="radio" name="music" value="11"><p>pop</p><br>
+   <input type="radio" name="music" value="12"><p>indie</p><br>
+
+ <p class="para">Do you like Karlie Kloss?</p>
+   <input type="radio" name="kloss" value="1"><p>Yes</p><br>
+   <input type="radio" name="kloss" value="0"><p>No</p><br>
+   
+
+ <p class="para">What is your favorite movie genre?</p>
+   <input type="radio" name="movie" value="1"><p>action</p><br>
+   <input type="radio" name="movie" value="2"><p>classics</p><br>
+   <input type="radio" name="movie" value="3"><p>SciFi</p><br>
+   <input type="radio" name="movie" value="4"><p>documentary</p><br>
+   <input type="radio" name="movie" value="5"><p>fantasy</p><br>
+   <input type="radio" name="movie" value="6"><p>fiction</p><br>
+   <input type="radio" name="movie" value="7"><p>literary fiction</p><br>
+   <input type="radio" name="movie" value="8"><p>thriller</p><br>
+   <input type="radio" name="movie" value="9"><p>comedy</p><br>
+   <input type="radio" name="movie" value="10"><p>nonfiction</p><br>
+   <input type="radio" name="movie" value="11"><p>mystery</p><br>
+   <input type="radio" name="movie" value="12"><p>magic</p><br>
+
+ <p class="para">Are you a morning or a night person?</p>
+   <input type="radio" name="person" value="1"><p>morning</p><br>
+   <input type="radio" name="person" value="2"><p>night</p><br>
+
+ <p class="para">What element do you assocate with?</p>
+   <input type="radio" name="element" value="1"><p>earth</p><br>
+   <input type="radio" name="element" value="2"><p>fire</p><br>
+   <input type="radio" name="element" value="3"><p>water</p><br>
+   <input type="radio" name="element" value="4"><p>air</p><br>
+
+ 
+  <br>
+  <br>
+  <button type="submit"> So... What's your planet? </button>
+   </form>
+ </body>
+</html>
