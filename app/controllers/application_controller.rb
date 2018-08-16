@@ -100,7 +100,7 @@ class ApplicationController < Sinatra::Base
     else
       return "wrong page"
     end
-    return "Due to your selections, we would recommend a #{decision[0]} (#{decision[1].gsub(URI.regexp, '<a href="\0">\0</a>')
+    return "Due to your selections, we would recommend #{decision[0]} (#{decision[1].gsub(URI.regexp, '<a href="\0">\0</a>')
 })."
     
     
