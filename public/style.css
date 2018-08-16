@@ -1,9 +1,11 @@
 
 .quiz {
   
-  font-family: "Raleway", sans-serif;*/
-  color: white;
-  background-image: url(https://image.freepik.com/free-vector/sketchy-food-background_23-2147507463.jpg);
+  font-family: "Trebuchet MS";
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(https://image.freepik.com/free-photo/table-top-with-background_1404-28.jpg);
   background-size: cover;
   
 }
