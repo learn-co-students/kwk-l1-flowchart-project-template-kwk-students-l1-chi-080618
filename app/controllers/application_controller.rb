@@ -103,6 +103,7 @@ class ApplicationController < Sinatra::Base
  
 post '/phoenix_quiz' do
     activity = params[:activity]
+    
     if activity == "Workout"
       return erb :phoenix_workout
       
@@ -185,8 +186,8 @@ post '/seattle_quiz' do
       
     elsif activity == "Eat_Dinner_and_Dessert"
       return erb :seattle_dessert
-    Else
-	Return “Wrong Page” 
+    else
+	    return "wrong page"
     end 
   end 
 
