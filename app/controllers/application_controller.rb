@@ -11,9 +11,6 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  get '/voyage' do
-    erb :voyage
-  end
 
   get '/region' do
     erb :region
