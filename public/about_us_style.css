@@ -1,4 +1,4 @@
-.Aboutpage{
+.selfDefTips{
   color:#737373; 
   font-family:Lucida Grande; 
   text-align: center; 
@@ -15,6 +15,7 @@ body{
     height: 400px;
     /*background-color:;*/
     text-align:center;
+    font-family:Lucida Grande;
 }
 
 /* The navbar container */
@@ -56,5 +57,10 @@ body{
   margin-right: auto;
 }
 
+.class {
+  font-family:Lucida Grande;
+  text-align: left;
+  
+}
 
 

@@ -10,7 +10,15 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
-  
+  get '/quiz' do
+    erb :quiz
+  end
+  get '/about_us' do
+    erb :about_us
+  end
+  get '/self_def_tips' do
+    erb :self_def_tips
+  end
   post '/results' do
     
     place = params[:place]
@@ -94,15 +102,16 @@ class ApplicationController < Sinatra::Base
     
     
   end
-  get '/about_us' do
-    erb :about_us
-  end
+  # get '/about_us' do
+  #   erb :about_us
+  # end
   
-  get '/homepage' do
-    erb :homepage
-  end
+  # get '/homepage' do
+  #   erb :homepage
+  # end
+ 
   
-  get '/selfDeftips' do
-    erb :selfDefTips
-  end
+  # get '/self_def_tips' do
+  #   erb :selfDefTips
+  # end
 end
