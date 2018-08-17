@@ -316,35 +316,7 @@ class ApplicationController < Sinatra::Base
   end 
 
   
-  post '/chicago_quiz' do
-    activity = params[:activity]
-    
-    if activity == "workout"
-      return erb :chicago_workout
-      
-    elsif activity == "breakfast"
-      return erb :chicago_breakfast
-      
-    elsif activity == "shopping"
-      return erb :chicago_shopping
-    
-    elsif activity == "lunch"
-      return erb :chicago_lunch
-    
-    elsif activity == "landmark"
-      return erb :chicago_landmark
-    
-    elsif activity == "entertainment"
-      return erb :chicago_entertainment 
-    
-    elsif activity == "dinner"
-      return erb :chicago_dinner
-      
-    else 
-      return "wrong page"
-    end 
-  end
-  
+
   
    post '/boston_quiz' do
     activity = params[:activity]
@@ -436,35 +408,6 @@ class ApplicationController < Sinatra::Base
     end 
   end
   
-  post '/detroit_quiz' do
-    activity = params[:activity]
-    
-    if activity == "workout"
-      return erb :detroit_workout
-      
-    elsif activity == "breakfast"
-      return erb :detroit_breakfast
-      
-    elsif activity == "shopping"
-      return erb :detroit_shopping
-    
-    elsif activity == "lunch"
-      return erb :detroit_lunch
-    
-    elsif activity == "landmark"
-      return erb :detroit_landmark
-    
-    elsif activity == "entertainment"
-      return erb :detroit_entertainment 
-    
-    elsif activity == "dinner"
-      return erb :detroit_dinner
-  
-    else 
-      return "wrong page"
-    end 
-  end
-
   
   post '/midwest_result' do
     
@@ -504,7 +447,7 @@ class ApplicationController < Sinatra::Base
       return erb :milwaukee_lunch
     
     elsif activity == "Visit_a_Local_Landmark"
-      return erb :milwaukee_Landmark
+      return erb :milwaukee_landmark
     
     elsif activity == "Find_Entertainment"
       return erb :milwaukee_entertainment
@@ -513,6 +456,95 @@ class ApplicationController < Sinatra::Base
       return erb :milwaukee_dessert
     end 
   end 
+  
+  post '/detroit_quiz' do
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :detroit_workout
+      
+    elsif activity == "breakfast"
+      return erb :detroit_breakfast
+      
+    elsif activity == "shopping"
+      return erb :detroit_shopping
+    
+    elsif activity == "lunch"
+      return erb :detroit_lunch
+    
+    elsif activity == "landmark"
+      return erb :detroit_landmark
+    
+    elsif activity == "entertainment"
+      return erb :detroit_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :detroit_dinner
+  
+    else 
+      return "wrong page"
+    end 
+  end
+
+post '/chicago_quiz' do
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :chicago_workout
+      
+    elsif activity == "breakfast"
+      return erb :chicago_breakfast
+      
+    elsif activity == "shopping"
+      return erb :chicago_shopping
+    
+    elsif activity == "lunch"
+      return erb :chicago_lunch
+    
+    elsif activity == "landmark"
+      return erb :chicago_landmark
+    
+    elsif activity == "entertainment"
+      return erb :chicago_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :chicago_dinner
+      
+    else 
+      return "wrong page"
+    end 
+  end
+  
+  post '/st.louis_quiz' do
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :stlouis_workout
+      
+    elsif activity == "breakfast"
+      return erb :stlouis_breakfast
+      
+    elsif activity == "shopping"
+      return erb :stlouis_shopping
+    
+    elsif activity == "lunch"
+      return erb :stlouis_lunch
+    
+    elsif activity == "landmark"
+      return erb :stlouis_landmark
+    
+    elsif activity == "entertainment"
+      return erb :stlouis_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :stlouis_dinner
+      
+    else 
+      return "wrong page"
+    end 
+  end
+  
+  
   
 
  end
