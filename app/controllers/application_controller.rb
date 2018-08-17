@@ -130,6 +130,25 @@ class ApplicationController < Sinatra::Base
   end
   
   
+  post '/south_result' do
+    
+    city = params[:city]
+ 
+    if city == "Atlanta"
+      return erb :atlanta
+      
+    elsif city == "Austin"
+      return erb :austin
+
+    elsif city == "New_Orleans"
+      return erb :neworleans
+    
+    else
+      return "wrong page"
+    end
+  end
+  
+  
   post '/phoenix_quiz' do
     activity = params[:activity]
     
@@ -419,33 +438,7 @@ end
     end 
   end 
   
-  post '/south_result' do
-    
-    city = params[:city]
- 
-    if city == "Atlanta"
-      return erb :atlanta
-      
-    elsif city == "Austin"
-      return erb :austin
-
-    elsif city == "New_Orleans"
-      return erb :neworleans
-    
-    else
-      return "wrong page"
-    end
-  end
-  
-  
- 
-
-
-
-
-
-  
-  post '/Austin_Quiz' do 
+  post '/Austin_quiz' do 
     activity = params[:activity]
     
     if activity == "workout"
@@ -478,25 +471,25 @@ end
     activity = params[:activity]
     
     if activity == "workout"
-      return erb :Atlanta_workout
+      return erb :atlanta_workout
     
     elsif activity == "breakfast"
-      return erb :Atlanta_breakfast
+      return erb :atlanta_breakfast
     
     elsif activity == "shopping"
-      return erb :Atlanta_shopping
+      return erb :atlanta_shopping
     
     elsif activity == "lunch"
-      return erb :Atlanta_lunch
+      return erb :atlanta_lunch
     
     elsif activity == "attraction"
-      return erb :Atlanta_landmark
+      return erb :atlanta_landmark
     
     elsif activity == "entertainment"
-      return erb :Atlnta_entertainment 
+      return erb :atlanta_entertainment 
     
     elsif activity == "dinner"
-      return erb :Atlanta_dinner
+      return erb :atlanta_dinner
     
     else 
       return "wrong page"
@@ -509,8 +502,8 @@ end
     activity = params[:activity]
     
     if activity == "workout"
-      return erb :New_Orleans_workout
-    
+      return erb :neworleans_workout
+  
     elsif activity == "breakfast"
       return erb :neworleans_breakfast
     
