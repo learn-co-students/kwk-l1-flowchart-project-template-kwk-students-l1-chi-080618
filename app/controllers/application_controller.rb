@@ -47,26 +47,7 @@ end
     end 
   end
   
-  post '/region' do
-    result = params[:result]
-    if result == "Westcoast"
-      return erb :westcoast
-      
-    elsif result == "Eastcoast"
-      return erb :eastcoast
-      
-    elsif result == "South"
-      return erb :south
-      
-    elsif result == "Midwest"
-      return erb :midwest
-    
-    elsif result == "Southeast"
-      return erb :southeast
-    else
-	    return "wrong page"
-    end 
-  end 
+
   
   
   post '/midwest_result' do
