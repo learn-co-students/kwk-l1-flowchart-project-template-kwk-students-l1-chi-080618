@@ -11,6 +11,21 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  get '/region/westcoast' do
+    erb :westcoast
+  end
+  
+  get '/region/midwest' do
+    erb :midwest
+  end
+  
+  get '/region/south' do
+    erb :south
+  end
+  
+  get '/region/eastcoast' do
+    erb :eastcoast
+  end
 
   get '/region' do
     erb :region
