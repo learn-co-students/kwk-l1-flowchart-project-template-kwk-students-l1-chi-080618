@@ -20,9 +20,10 @@ class ApplicationController < Sinatra::Base
     return erb :index
   end
   
-  get 'quiz' do
+  get '/quiz' do
     return erb :quiz
   end
+  
   
   post '/results' do
     #puts params
@@ -38,14 +39,20 @@ class ApplicationController < Sinatra::Base
     result = calculate_result(total) # use the method calculate_result (that we defined in sample_model.rb) to get result
     
     #puts result
-    if result == "bffs" # depending on the result, redirect to a certain erb file (aka different page)
-      return erb :bff
-    elsif result == "ok"
-      return erb :okay
-    else
-      return erb :nope
-    end
-    
-    
-  end
-end
+    if result == "VocalID-PenguinProject" # depending on the result, redirect to a certain erb file (aka different page)
+      return erb :specialneeds
+    elsif result == "ProjectFierce-TrevorProject"
+      return erb :lgbtq
+    elsif result == "BlackGirlsCode-KahnAcademy"
+      return erb :education
+    elsif result == "Paws-Bestfriends"
+      return erb :animals 
+    elsif result == "FeedMyStarvingChildren-AllHandsandHearts"
+      return erb :hungerrelief
+    elsif result == "Canteen-CampHappyDay"
+      return erb :healthcare
+    elsif result == "DirectRelief-ProjectHope"
+      return erb :naturaldisasterrelief
+  end 
+end 
+end 
