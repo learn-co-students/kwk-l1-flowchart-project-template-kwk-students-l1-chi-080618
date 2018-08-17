@@ -2,37 +2,37 @@ def calculate_result(total)
   if total <= 7
     return "mars"
   
-  elsif total <= 21
+  elsif total <= 10
     return "mercury"
     
-  elsif total <= 28
+  elsif total <= 15
     return "moon"
     
-  elsif total <= 35 
+  elsif total <= 20 
     return "sun"
     
-  elsif total <= 42
-    puts "pluto"
+  elsif total <= 30
+    return "pluto"
     
-  elsif total <= 49
+  elsif total <= 35
     return "venus"
     
-  elsif total <= 56
+  elsif total <= 40
     return "earth"
     
-  elsif total <= 63
+  elsif total <= 45
     return "jupiter"
     
-  elsif total <= 70
+  elsif total <= 50
     return "saturn"
     
-  elsif total <= 77 
+  elsif total <= 58 
     return "uranus"
     
-  elsif total <= 84
+  elsif total <= 63
     return "neptune"
     
-  else
+  elsif total >= 1000
     return "alien"
     
   end 

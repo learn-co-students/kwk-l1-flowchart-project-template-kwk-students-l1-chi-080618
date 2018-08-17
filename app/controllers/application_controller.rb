@@ -43,6 +43,8 @@ class ApplicationController < Sinatra::Base
     puts "TOTAL ****** #{total}"
 
     result = calculate_result(total)
+    
+    puts "RESULT ****** #{result}"
 
     if result == "mars"
       return erb :mars
