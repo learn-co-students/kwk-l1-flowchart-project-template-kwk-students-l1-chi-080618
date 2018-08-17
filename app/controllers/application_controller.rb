@@ -61,7 +61,7 @@ class ApplicationController < Sinatra::Base
   end
   
   
- post '/eastcoast_result' do
+  post '/eastcoast_result' do
     
     city = params[:city]
  
@@ -167,6 +167,7 @@ class ApplicationController < Sinatra::Base
       return "wrong page"
     end 
   end
+   
    
   post '/Atlanta_Quiz' do 
     activity = params[:activity]
@@ -281,13 +282,13 @@ class ApplicationController < Sinatra::Base
     elsif activity == "Dinner"
       return erb :losangeles_dinner
     else
-	  return "wrong page"
+	    return "wrong page"
     end 
   end 
 
 
 
-post '/seattle_quiz' do
+  post '/seattle_quiz' do
     activity = params[:activity]
     if activity == "Workout"
       return erb :seattle_workout
@@ -314,8 +315,6 @@ post '/seattle_quiz' do
     end 
   end 
 
-  
- 
   
   post '/chicago_quiz' do
     activity = params[:activity]
@@ -437,7 +436,7 @@ post '/seattle_quiz' do
     end 
   end
   
-     post '/detroit_quiz' do
+  post '/detroit_quiz' do
     activity = params[:activity]
     
     if activity == "workout"
