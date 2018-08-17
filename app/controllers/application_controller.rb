@@ -15,6 +15,10 @@ class ApplicationController < Sinatra::Base
     erb :westcoast
   end
   
+  post '/result' do
+    erb :region
+end
+  
   get '/region/midwest' do
     erb :midwest
   end
@@ -43,6 +47,27 @@ class ApplicationController < Sinatra::Base
     end 
   end
   
+  post '/region' do
+    result = params[:result]
+    if result == "Westcoast"
+      return erb :westcoast
+      
+    elsif result == "Eastcoast"
+      return erb :eastcoast
+      
+    elsif result == "South"
+      return erb :south
+      
+    elsif result == "Midwest"
+      return erb :midwest
+    
+    elsif result == "Southeast"
+      return erb :southeast
+    else
+	    return "wrong page"
+    end 
+  end 
+  
   
   post '/midwest_result' do
     
@@ -63,6 +88,8 @@ class ApplicationController < Sinatra::Base
       return "wrong_page"
     end 
   end
+  
+ 
   
   post '/westcoast_result' do
     
