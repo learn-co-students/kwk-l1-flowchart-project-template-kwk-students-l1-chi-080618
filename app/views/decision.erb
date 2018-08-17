@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+   <link rel="stylesheet" type="text/css" href="/decision.css">
+</head>
+<body>
+   <img id="red" src="/image2.jpg" width= "990" height= "200">
+  <div class="topnav">
+    <a href="homepage">Home</a>
+    <a href="about_us">About us</a>
+    <a href="quiz">Self-Defense Quiz</a>
+    <a href="self_def_tips">Quick Tips</a>
+  </div>
+  <br>
+  <div class="column">
+    <br>
+    <h2>Here are your results!</h2>
+    <br>
+    <center>
+    
+    <h1>Based on your answers, we would recommend <%=@decision[0]%></h1>
+    <br>
+    <img src="http://moosin.com/wp-content/uploads/2017/07/Kick-fit.jpg" width="300" height="300">
+    <br>
+    <br>
+    <a href=<%=@decision[1]%>>Self-Defense Class</a>
+    
+    </center>
+
+  </div>
+  <div class="sidenav"></div>
+  <div class="sidenav2"></div>
+</body>
+</html>
