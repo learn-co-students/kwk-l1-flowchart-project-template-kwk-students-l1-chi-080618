@@ -22,14 +22,14 @@ class ApplicationController < Sinatra::Base
     erb :about
   end
   
-  post '/region' do
+  # post '/region' do
     
-  region = params[:home]
+  # region = params[:home]
  
-    if region == "Home"
-      return erb :home
-    end 
-  end
+  #   if region == "Home"
+  #     return erb :home
+  #   end 
+  # end
   
   get '/region/westcoast' do
     erb :westcoast
@@ -70,10 +70,7 @@ class ApplicationController < Sinatra::Base
     end
   end
   
-  post '/westcoast_result' do
-    return erb :westcoast
-  end
- 
+  
  post '/eastcoast_result' do
     
     city = params[:city]
@@ -111,6 +108,25 @@ class ApplicationController < Sinatra::Base
     else
       return "wrong page"
     end
+  end
+  
+    
+  post '/westcoast_result' do
+    
+    city = params[:city]
+ 
+    if city == "Phoenix"
+      return erb :phoenix
+    
+    elsif city == "Los_Angeles"
+      return erb :losangeles
+
+    elsif city == "Seattle"
+      return erb :seattle
+
+    else
+      return "wrong_page"
+    end 
   end
   
  
@@ -285,25 +301,7 @@ end
     end 
   end
   
- 
-  
-  post '/westcoast_result' do
-    
-    city = params[:city]
- 
-    if city == "Phoenix"
-      return erb :phoenix
-    
-    elsif city == "Los_Angeles"
-      return erb :losangeles
 
-    elsif city == "Seattle"
-      return erb :seattle
-
-    else
-      return "wrong_page"
-    end 
-  end
   
   
   post '/milwaukee_quiz' do
@@ -422,3 +420,94 @@ post '/seattle_quiz' do
 	    return "wrong page"
     end 
   end 
+  
+  post '/Austin_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :Austin_workout
+    
+    elsif activity == "breakfast"
+      return erb :Austin_breakfast
+    
+    elsif activity == "shopping"
+      return erb :Austin_shopping
+    
+    elsif activity == "lunch"
+      return erb :Austin_lunch
+    
+    elsif activity == "attraction"
+      return erb :Austin_landmark
+    
+    elsif activity == "entertainment"
+      return erb :Austin_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :Austin_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+   
+  post '/Atlanta_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :Atlanta_workout
+    
+    elsif activity == "breakfast"
+      return erb :Atlanta_breakfast
+    
+    elsif activity == "shopping"
+      return erb :Atlanta_shopping
+    
+    elsif activity == "lunch"
+      return erb :Atlanta_lunch
+    
+    elsif activity == "attraction"
+      return erb :Atlanta_landmark
+    
+    elsif activity == "entertainment"
+      return erb :Atlnta_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :Atlanta_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+  
+  
+  
+  post '/New_Orleans_Quiz' do 
+    activity = params[:activity]
+    
+    if activity == "workout"
+      return erb :New_Orleans_workout
+    
+    elsif activity == "breakfast"
+      return erb :New_Orleans_breakfast
+    
+    elsif activity == "shopping"
+      return erb :New_Orleans_shopping
+    
+    elsif activity == "lunch"
+      return erb :New_Orleans_lunch
+    
+    elsif activity == "attraction"
+      return erb :New_Orleans_landmark
+    
+    elsif activity == "entertainment"
+      return erb :New_Orleans_entertainment 
+    
+    elsif activity == "dinner"
+      return erb :New_Orleans_dinner
+    
+    else 
+      return "wrong page"
+    end 
+  end
+ 
+ 
