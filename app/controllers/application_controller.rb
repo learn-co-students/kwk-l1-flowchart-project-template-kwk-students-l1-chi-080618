@@ -129,6 +129,96 @@ class ApplicationController < Sinatra::Base
     end 
   end
   
+  
+  post '/phoenix_quiz' do
+    activity = params[:activity]
+    
+    if activity == "Workout"
+      return erb :phoenix_workout
+      
+    elsif activity == "Eat_Breakfast"
+      return erb :phoenix_breakfast
+      
+    elsif activity == "Go_Shopping"
+      return erb :phoenix_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :phoenix_lunch
+    
+    elsif activity == "Visit_a_Local_Landmark"
+      return erb :phoenix_landmark
+    
+    elsif activity == "Find_Entertainment"
+      return erb :phoenix_entertainment
+      
+    elsif activity == "Eat_Dinner_and_Dessert"
+      return erb :phoenix_dinner
+    else 
+      return "wrong page"
+    end 
+  end 
+  
+  
+  post '/losangeles_quiz' do
+    activity = params[:activity]
+    if activity == "Workout"
+      return erb :losangeles_workout
+      
+    elsif activity == "Breakfast"
+      return erb :losangeles_breakfast
+      
+    elsif activity == "Shopping"
+      return erb :losangeles_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :losangeles_lunch
+    
+    elsif activity == "Landmark"
+      return erb :losangeles_landmark
+    
+    elsif activity == "Entertainment"
+      return erb :losangeles_entertainment
+      
+    elsif activity == "Dinner"
+      return erb :losangeles_dinner
+    else
+	  return "wrong page"
+    end 
+  end 
+
+
+
+
+
+
+post '/seattle_quiz' do
+    activity = params[:activity]
+    if activity == "Workout"
+      return erb :seattle_workout
+      
+    elsif activity == "Breakfast"
+      return erb :seattle_breakfast
+      
+    elsif activity == "Shopping"
+      return erb :seattle_shopping
+      
+    elsif activity == "Eat_Lunch"
+      return erb :seattle_lunch
+    
+    elsif activity == "Landmark"
+      return erb :seattle_Landmark
+    
+    elsif activity == "Entertainment"
+      return erb :seattle_entertainment
+      
+    elsif activity == "Dinner"
+      return erb :seattle_dinner
+    else
+	    return "wrong page"
+    end 
+  end 
+
+  
  
   
   post '/chicago_quiz' do
@@ -329,121 +419,55 @@ end
     end 
   end 
   
+  post '/south_result' do
+    
+    city = params[:city]
+ 
+    if city == "Atlanta"
+      return erb :atlanta
+      
+    elsif city == "Austin"
+      return erb :austin
+
+    elsif city == "New_Orleans"
+      return erb :neworleans
+    
+    else
+      return "wrong page"
+    end
+  end
+  
   
  
-post '/phoenix_quiz' do
-    activity = params[:activity]
-    
-    if activity == "Workout"
-      return erb :phoenix_workout
-      
-    elsif activity == "Eat_Breakfast"
-      return erb :phoenix_breakfast
-      
-    elsif activity == "Go_Shopping"
-      return erb :phoenix_shopping
-      
-    elsif activity == "Eat_Lunch"
-      return erb :phoenix_lunch
-    
-    elsif activity == "Visit_a_Local_Landmark"
-      return erb :phoenix_landmark
-    
-    elsif activity == "Find_Entertainment"
-      return erb :phoenix_entertainment
-      
-    elsif activity == "Eat_Dinner_and_Dessert"
-      return erb :phoenix_dinner
-    else 
-      return "wrong page"
-    end 
-  end 
-
-
-
-
-post '/losangeles_quiz' do
-    activity = params[:activity]
-    if activity == "Workout"
-      return erb :losangeles_workout
-      
-    elsif activity == "Breakfast"
-      return erb :losangeles_breakfast
-      
-    elsif activity == "Shopping"
-      return erb :losangeles_shopping
-      
-    elsif activity == "Eat_Lunch"
-      return erb :losangeles_lunch
-    
-    elsif activity == "Landmark"
-      return erb :losangeles_landmark
-    
-    elsif activity == "Entertainment"
-      return erb :losangeles_entertainment
-      
-    elsif activity == "Dinner"
-      return erb :losangeles_dinner
-    else
-	  return "wrong page"
-    end 
-  end 
 
 
 
 
 
-
-post '/seattle_quiz' do
-    activity = params[:activity]
-    if activity == "Workout"
-      return erb :seattle_workout
-      
-    elsif activity == "Breakfast"
-      return erb :seattle_breakfast
-      
-    elsif activity == "Shopping"
-      return erb :seattle_shopping
-      
-    elsif activity == "Eat_Lunch"
-      return erb :seattle_lunch
-    
-    elsif activity == "Landmark"
-      return erb :seattle_Landmark
-    
-    elsif activity == "Entertainment"
-      return erb :seattle_entertainment
-      
-    elsif activity == "Dinner"
-      return erb :seattle_dinner
-    else
-	    return "wrong page"
-    end 
-  end 
   
   post '/Austin_Quiz' do 
     activity = params[:activity]
     
     if activity == "workout"
-      return erb :Austin_workout
+      return erb :austin_workout
     
     elsif activity == "breakfast"
-      return erb :Austin_breakfast
+      return erb :austin_breakfast
     
     elsif activity == "shopping"
-      return erb :Austin_shopping
+      return erb :austin_shopping
     
     elsif activity == "lunch"
-      return erb :Austin_lunch
+      return erb :austin_lunch
     
     elsif activity == "attraction"
-      return erb :Austin_landmark
+      return erb :austin_landmark
     
     elsif activity == "entertainment"
-      return erb :Austin_entertainment 
+      return erb :austin_entertainment 
     
     elsif activity == "dinner"
-      return erb :Austin_dinner
+      return erb :austin_dinner
     
     else 
       return "wrong page"
@@ -488,22 +512,22 @@ post '/seattle_quiz' do
       return erb :New_Orleans_workout
     
     elsif activity == "breakfast"
-      return erb :New_Orleans_breakfast
+      return erb :neworleans_breakfast
     
     elsif activity == "shopping"
-      return erb :New_Orleans_shopping
+      return erb :neworleans_shopping
     
     elsif activity == "lunch"
-      return erb :New_Orleans_lunch
+      return erb :neworleans_lunch
     
     elsif activity == "attraction"
-      return erb :New_Orleans_landmark
+      return erb :neworleans_landmark
     
     elsif activity == "entertainment"
-      return erb :New_Orleans_entertainment 
+      return erb :neworleans_entertainment 
     
     elsif activity == "dinner"
-      return erb :New_Orleans_dinner
+      return erb :neworleans_dinner
     
     else 
       return "wrong page"
